@@ -12,7 +12,6 @@ def convert_to_fahrenheit(celsius):
     
 
 def main():
-    # global temperature
     temperature = float(input("Enter the temperature to convert: "))
     convertion = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
 
