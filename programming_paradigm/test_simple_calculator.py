@@ -52,3 +52,6 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(10, 5), 2)
         self.assertEqual(self.calc.divide(24, 4), 6)
         
+        """Test for division by zero."""
+        with self.assertRaises(ZeroDivisionError):
+            self.calc.divide(10,0)
