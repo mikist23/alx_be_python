@@ -1,3 +1,4 @@
+import math
 class Shape:
     def area(self):
         raise NotImplementedError
@@ -12,11 +13,11 @@ class Rectangle(Shape):
         result = self.length * self.width
         return result
 
-class circle(Shape):
+class Circle(Shape):
      
      def __init__(self,radius):
          self.radius = radius
      
      def area(self):
-        result = self.radius**2
+        result = math.pi * self.radius**2
         return result
